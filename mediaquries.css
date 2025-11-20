@@ -1,0 +1,122 @@
+@media screen and (max-width:1400px) {
+   #profile{
+    height: 7vh;
+    margin-bottom: 6rem;
+   }
+   .about-containers{
+    flex-wrap: wrap;
+   }
+}
+
+@media screen and (max-width:1200px) {
+    #desktop-nav{
+    display: none;
+    }
+    #hamburger-nav{
+    display: flex;
+    }
+    #experience, .experience-details-container {
+        margin-top: 2rem;
+    }
+    #profile, .section-container {
+        display: block; 
+    }
+    .arrow{
+        display: none;
+    }
+    section,.section-container{
+        height:fit-content;
+    }
+    section {
+        margin: 0 5%;
+    }
+    .section__pic-container{
+        width: 275px;
+        height: 275px;
+        margin: 0 auto 15rem;
+    }
+    .about-containers {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width:495px) {
+    #contact, footer{
+        height: 4vh;
+    }
+    #profile {
+        height: 83vh;
+        margin-bottom: 0;
+    }
+    article {
+     font-size: 1rem;
+    }
+    footer nav{height: fit-content;
+        margin-bottom: 2rem;
+    }
+    .about-containers, .contact-info-upper-container, 
+    .about-container{
+        flex-wrap: wrap;
+    }
+    .contact-info-container {
+        margin: 0;
+    }
+    .contact-info-containers p,
+    .nav-links li a {
+        font-size: 1rem;
+    }
+    .experience-sub-title{
+        font-size: 1.25rem;
+    }
+
+   .logo{
+      font-size: 1.5rem;
+    }
+    .nav-links{
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+    .section__pic-container{
+        width: auto;
+        height: 46vw;
+        justify-content: center;
+    }
+    .section__text__p2{
+        font-size: 1.25rem;
+    }
+    .title {
+        font-size: 2rem;
+    }
+    .text-container{
+        text-align: justify;
+    }
+    }  
+
+    /* برای صفحه‌های کوچک */
+@media screen and (max-width: 495px) {
+
+    /* کانتینر بالای Contact */
+    .Contact-info-upper-container {
+        flex-direction: column;  /* بچه‌ها زیر هم قرار بگیرند */
+        width: 80%;              /* عرض کم شود */
+        margin: 0 auto;          /* وسط صفحه */
+        padding: 0,1px;
+    }
+
+    .Contact-info-container {
+        width: 100%;             /* هر بخش کل عرض کانتینر را بگیرد */
+        justify-content: flex-start; /* متن و آیکن کنار هم */
+        margin: 0.5rem 0;        /* فاصله بین بخش‌ها */
+    }
+
+    .Contact-info-container p {
+        font-size: 1rem;         /* اندازه متن مناسب شود */
+        word-break: break-word;  /* متن طولانی نشکند */
+    }
+
+    .icon.Contact,
+    .icon.Contact-icon {
+        height: 2rem;            /* آیکن هم متناسب شود */
+    }
+}
